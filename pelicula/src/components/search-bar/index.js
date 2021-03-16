@@ -21,9 +21,11 @@ const SearchBar = ({ onResults }) => {
   };
   return (
     <div className="searchBar-container">
-    <form onSubmit={handleSubmit} autoComplete="false">
-      <input type="text" onChange={handleChange} value={busqueda} />
-      <button>Buscar</button>
+    <form onSubmit={handleSubmit} autoComplete="false" className="searchBar-form">
+      <div className="form-group">
+      <input type="text" onChange={handleChange} value={busqueda} className="form-input" placeholder="Busca tu película"/>
+      <button className="form-button"><i class="fas fa-search"></i></button>        
+      </div>
       <h1>{busqueda}</h1>
     </form>
     </div>
