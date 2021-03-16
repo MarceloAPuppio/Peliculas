@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './index.css'
 
 const SearchBar = ({ onResults }) => {
   const [APIKEY] = useState("c421f06a");
@@ -19,11 +20,13 @@ const SearchBar = ({ onResults }) => {
     onResults(Search);
   };
   return (
+    <div className="searchBar-container">
     <form onSubmit={handleSubmit} autoComplete="false">
       <input type="text" onChange={handleChange} value={busqueda} />
       <button>Buscar</button>
       <h1>{busqueda}</h1>
     </form>
+    </div>
   );
 };
 

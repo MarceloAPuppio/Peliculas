@@ -1,0 +1,7 @@
+.searchBar-container{
+    width: 100%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    
+}
