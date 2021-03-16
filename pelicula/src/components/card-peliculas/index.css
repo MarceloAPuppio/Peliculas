@@ -1,0 +1,20 @@
+/* <div className="card-pelicula-container">
+<img src={Poster} alt="" className="card-pelicula__img" />
+<h1 className="card-pelicula__title">{Title}</h1>
+<h4 className="card-pelicula__subtitle">{Year}</h4>
+</div> */
+
+.card-pelicula-container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    background: red;
+}
+.card-pelicula__img-container{
+    width: 100%;
+    height: 50px;
+}
+.card-pelicula__img{
+max-width: 100%;
+height: auto;
+}

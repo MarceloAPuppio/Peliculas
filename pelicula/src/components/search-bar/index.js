@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './index.css'
+import "./index.css";
 
 const SearchBar = ({ onResults }) => {
   const [APIKEY] = useState("c421f06a");
@@ -21,13 +21,24 @@ const SearchBar = ({ onResults }) => {
   };
   return (
     <div className="searchBar-container">
-    <form onSubmit={handleSubmit} autoComplete="false" className="searchBar-form">
-      <div className="form-group">
-      <input type="text" onChange={handleChange} value={busqueda} className="form-input" placeholder="Busca tu película"/>
-      <button className="form-button"><i class="fas fa-search"></i></button>        
-      </div>
-      <h1>{busqueda}</h1>
-    </form>
+      <form
+        onSubmit={handleSubmit}
+        className="searchBar-form"
+        autoComplete="false"
+      >
+        <div className="form-group">
+          <input
+            type="text"
+            onChange={handleChange}
+            value={busqueda}
+            className="form-input"
+            placeholder="Busca tu película"
+          />
+          <button className="form-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
     </div>
   );
 };
