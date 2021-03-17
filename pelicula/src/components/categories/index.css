@@ -1,0 +1,14 @@
+.categories-container {
+  display: flex;
+  margin: 60px auto;
+  width: 80%;
+  justify-content: space-between;
+  position: relative;
+}
+.categories-container::before {
+  content: "Categorías";
+  position: absolute;
+  top: -30px;
+  color: rgb(206, 204, 204);
+  font-size: 14px;
+}

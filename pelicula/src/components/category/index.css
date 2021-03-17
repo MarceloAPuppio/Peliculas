@@ -1,0 +1,18 @@
+.category-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 55px;
+  height: 58px;
+  background: #383e5f8e;
+  border-radius: 15px;
+}
+.category__emoji {
+  font-size: 18px;
+}
+.category__title {
+  color: whitesmoke;
+  font-size: 10px;
+  font-weight: bold;
+}

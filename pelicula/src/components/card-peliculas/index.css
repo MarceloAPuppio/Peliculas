@@ -4,17 +4,46 @@
 <h4 className="card-pelicula__subtitle">{Year}</h4>
 </div> */
 
-.card-pelicula-container{
-    display: flex;
-    flex-flow: column wrap;
-    width: 40%;
-    background: red;
+.card-pelicula-container {
+  /* display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; */
+  width: 160px;
+  height: 250px;
+  margin: 0 12px;
+  /* background: red; */
 }
-.card-pelicula__img-container{
-    width: 100%;
-    height: 50px;
+.card-pelicula__img-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 160px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 25px;
 }
-.card-pelicula__img{
-max-width: 100%;
-height: auto;
+.card-pelicula__img {
+  height: auto;
+  max-width: 100%;
+}
+.card-pelicula__title {
+  margin: 5px;
+  flex-basis: 100%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  color: whitesmoke;
+  font-weight: 400;
+}
+
+.card-pelicula__subtitle {
+  font-weight: 400;
+  margin: 5px;
+  flex-basis: 100%;
+  font-size: 15px;
+  color: whitesmoke;
 }

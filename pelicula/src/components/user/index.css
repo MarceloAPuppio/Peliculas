@@ -1,0 +1,37 @@
+/* <div className="user-container">
+<h1 className="user__regards">Saludo</h1>
+<img
+  className="user__photo"
+  src="https://img.icons8.com/cotton/2x/gender-neutral-user--v1.png"
+  alt="imagen de usuario deslogueado color gris"
+/>
+</div> */
+.user-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+picture {
+  position: relative;
+}
+.user__photo {
+  height: 45px;
+  width: auto;
+}
+
+picture::before {
+  content: "";
+  background: rgb(101, 236, 47);
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+.user__regards {
+  color: rgb(223, 223, 223);
+  font-size: 24px;
+}
