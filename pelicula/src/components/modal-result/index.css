@@ -1,0 +1,65 @@
+/* 
+  <img
+    src="https://m.media-amazon.com/images/M/MV5BYjg4ZjUzMzMtYzlmYi00YTcwLTlkOWUtYWFmY2RhNjliODQzXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg"
+    alt=""
+  />
+<div className="modal-result__card-info">
+  <h2 className="card-info__title">SOY UN Maldito Modal</h2>
+  <p className="card-info__director">Director</p>
+  <div className="card-info__budget-container">
+    <span>Drama</span>
+    <span>comedia</span>
+    <span>Terror</span>
+    <span>Ciencia</span>
+  </div>
+</div>
+<p className="card-info__sinopsis">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+  minus incidunt veritatis error. Consequatur esse alias, architecto ullam
+  voluptatem quam unde quos pariatur, tempore ex ad, illum eum? Aperiam,
+  praesentium?
+</p>
+*/
+.modal-result-container {
+  position: absolute;
+  z-index: 5;
+  padding: 20px 30px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* background: rgba(var(--bg-color)); */
+  backdrop-filter: blur(10px);
+  color: rgba(245, 245, 245, 0.767);
+}
+.modal-result-header {
+  display: flex wrap;
+  flex-flow: row;
+  justify-content: flex-start;
+  font-size: 20px;
+  width: 100%;
+}
+.modal-result-header i {
+  width: 30px;
+  display: inline-block;
+}
+.modal-result-header span {
+  float: right;
+  text-align: center;
+  width: calc(100% - 30px);
+}
+.modal-result__img-container {
+  width: 86%;
+  height: 320px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  border-radius: 30px;
+  box-shadow: 0 5px 1px rgba(255, 255, 255, 0.4);
+}
+.modal-result__img-container img {
+  height: 120%;
+}
